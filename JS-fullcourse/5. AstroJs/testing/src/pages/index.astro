@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/layouts.astro";
+import Link from "../components/Link.astro";
+const title = "Homepage";
+const items = ["Dog", "Cat", "Platypus"];
+const goto = ["about", "contact", "profile"];
+---
+
+<ul>
+  {items.map((item) => <li>{item}</li>)}
+</ul>
+
+<Layout title={title}>
+  <Link link="/about" cssClass="link" content="go to about" />
+  <Link link="/contact" cssClass="link" content="go to contact" />
+  <Link link="/profile" cssClass="link" content="go to profile" />
+</Layout>

@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+.atap{
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    border: 1px solid brown;
+    margin: auto;
+}
+
+img{
+    width: 20%;
+}
+
+button{
+    padding: 10px;
+    
+}
