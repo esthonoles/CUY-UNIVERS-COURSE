@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tugas Lampu</title>
+</head>
+<body>
+    <div class="grid md:grid-cols-2 sm:grid-cols-1 items-center min-h-screen w-full bg-gray-800 gap-1 p-5">
+        <!-- ruang tamu -->
+        <div class="flex flex-col items-center bg-red-100 grid-col-3 p-2 max-h-60"> 
+            <h3 class="text-sm font-semibold mb-3">Ruang Tamu</h3>
+            <label for="toggle-tamu" class="relative inline-flex items-center mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" id="toggle-tamu" onchange="ruangTamu()">
+                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                
+              </label>
+            <div class="flex justify-center w-full min-h-3.5">
+                <img src="asset/offbree.png" alt="" class="object-fit max-w-20 lampu-tamu">
+                <img src="asset/offbree.png" alt="" class="object-fit max-w-20 lampu-tamu">
+                <img src="asset/offbree.png" alt="" class="object-fit max-w-20 lampu-tamu">
+                <img src="asset/offbree.png" alt="" class="object-fit max-w-20 lampu-tamu">
+            </div>
+        </div>
+        <!-- ruang tamu end -->
+        
+        <!-- ruang keluarga -->
+        <div class="flex flex-col items-center bg-purple-100 grid-col-3 p-2 max-h-60"> 
+            <h3 class="text-sm font-semibold mb-3">Ruang Keluarga</h3>
+            <label for="toggle-keluarga" class="relative inline-flex items-center mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" id="toggle-keluarga" onchange="ruangKeluarga()">
+                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                
+              </label>
+            <div class="flex justify-center w-full min-h-3.5">
+                <img src="asset/offbree.png" alt="" class="object-fit max-w-20 lampu-keluarga">
+                <img src="asset/offbree.png" alt="" class="object-fit max-w-20 lampu-keluarga">
+                <img src="asset/offbree.png" alt="" class="object-fit max-w-20 lampu-keluarga">
+            </div>
+        </div>
+        <!-- ruang keluarga end -->
+        
+        <!-- ruang tidur -->
+        <div class="flex flex-col items-center bg-green-100 grid-col-3 p-2 max-h-60"> 
+            <h3 class="text-sm font-semibold mb-3">Ruang Tidur</h3>
+            <label for="toggle-tidur" class="relative inline-flex items-center mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" id="toggle-tidur" onchange="ruangTidur()">
+                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                
+              </label>
+            <div class="flex justify-center w-full min-h-3.5">
+                <img src="asset/offbree.png" alt="" class="object-fit max-w-20 lampu-tidur">
+                <img src="asset/offbree.png" alt="" class="object-fit max-w-20 lampu-tidur">
+            </div>
+        </div>
+        <!-- r -->
+
+        <!-- ruang makan -->
+        <div class="flex flex-col items-center bg-yellow-100 grid-col-3 p-2 max-h-60"> 
+            <h3 class="text-sm font-semibold mb-3">Ruang Makan</h3>
+            <label for="toggle-makan" class="relative inline-flex items-center mb-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" id="toggle-makan" onchange="ruangMakan()">
+                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                
+              </label>
+            <div class="flex justify-center w-full min-h-3.5">
+                <img src="asset/offbree.png" alt="" id="lampu-makan" class="object-fit max-w-20">
+            </div>
+        </div>
+        <!-- ruang makan end -->
+
+    </div>    
+<script src="main.js"></script>
+</body>
+</html>
