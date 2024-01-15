@@ -1,0 +1,44 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #c55858;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(50px);
+}
+
+.title{
+    margin-top: 3px;
+    font-weight: 600;
+    font-size: 1.5em;
+
+}
+input{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #c55858;
+    color: white;
+    border: 0.1px solid white;
+}
+
+button:hover{
+    background-color: #ebebeb;
+    color: #c55858;
+    transition: all 0.8s;
+    font-weight: 800;
+}

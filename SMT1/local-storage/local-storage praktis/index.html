@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>local storage</title>
+</head>
+<body>
+    <div id="root">
+        <p class="title">Local Storage Fake Login</p>
+        <input type="text" placeholder="enter your username" id="username-input">
+        <input type="password" placeholder="enter your password" id="password-input">
+        <button onclick="onLogin()" id="btnlogin">
+            Login</button>
+        
+        <br/>
+        <p id="admin">🤑 anda admin</p>
+        <p id="user-biasa">🫠 anda user biasa saja</p>
+        
+        <button onclick="onLogout()" id="btnlogout">
+            Logout</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

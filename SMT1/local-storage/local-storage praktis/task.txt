@@ -1,0 +1,3 @@
+- tambahkan role baru
+- tampilkan sesuatu yang berbeda di setiap dashboard rolenya
+- bikin register /menu pendaftaran. jadi hanya bisa user yang terdaftar di storage yang bisa login
