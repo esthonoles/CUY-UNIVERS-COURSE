@@ -1,0 +1,11 @@
+CUY univers Semester IV
+
+1. buat 10 lampu fungsi sama
+2. buat 4 grup lampu ruangan
+    - ruangan keluarga (3lampu)
+    - ruangan makan (1 lampu)
+    - ruangan tidur (2 lampu)
+    - ruangan tamu (4 tamu)
+
+Note : ada tombol perlampu && saklar pergrup
+link : https://astounding-cuchufli-ffc7dd.netlify.app/

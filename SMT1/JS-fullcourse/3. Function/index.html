@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Tugas Sesi 3</title>
+</head>
+<body>
+    <div class="row p-4 container-xl bg-success p-2 text-white gap-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Luas Segitiga</h5>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">alas</span>
+                <input type="number" id="alasSegitiga" class="form-control" placeholder="alas" aria-label="alas" aria-describedby="basic-addon1">
+              </div>
+                <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">tinggi</span>
+                <input type="number" id="tinggiSegitiga"class="form-control" placeholder="tinggi" aria-label="tinggi" aria-describedby="basic-addon1">
+                </div>
+             
+              <div class="hasilHitung text-center fs3 fw-bold bg-secondary-subtle text-emphasis-secondary rounded" style="height: 50px; width: 100%; margin-bottom: 10px;">
+<p id="hasilsegitiga" class="fs-3 m-auto"></p>
+              </div>
+
+              <div class="d-flex justify-content-between">
+              <button type="button" id="hitungSegitiga" class="btn btn-primary"onclick="hitungSegitiga()">Hitung</button>
+              <button type="button" id="hitungLingkaran" class="btn btn-danger"onclick="clear()">Hapus</button>
+            </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Luas Lingkaran</h5>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">jari-jari</span>
+                <input type="number" id="jariJari" class="form-control" placeholder="jari-jari" aria-label="alas" aria-describedby="basic-addon1">
+              </div>
+            
+              <div class="hasilHitung text-center fs3 fw-bold bg-secondary-subtle text-emphasis-secondary rounded" style="height: 50px; width: 100%; margin-bottom: 10px;">
+<p id="luas" class="fs-3 m-auto"></p>
+              </div>
+              <div class="d-flex justify-content-between">
+              <button type="button" id="hitungLingkaran" class="btn btn-primary"onclick="luasLingkaran()">Hitung</button>
+              <button type="reset" id="hitungLingkaran" value ="reset" class="btn btn-danger  "onclick="clearLingkaran()">Hapus</button>
+                
+            </div>
+              
+            </div>
+          </div>
+        </div>
+    
+    <script src="tugas.js"></script>
+</body>
+</html>

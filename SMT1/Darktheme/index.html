@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@300;600&display=swap" rel="stylesheet">
+    <title>Darktheme</title>
+</head>
+<body>
+   <div class="container">
+    <nav>
+        <a href="">HOME</a>
+        <a id="mode" onclick="darkMode()">MODE-DARK</a>
+    </nav>
+        <h1>Dark Theme Klik: <span id="clicks">0</span></h1>
+        <p id="info" class="info"></p>
+    </div>
+    <script>
+        let body = document.body;
+        const darkLimit = 5;
+        let darkCounter = 0;
+        let darkRemainingLeft;
+        let info = document.getElementById("info")
+        let mode = document.getElementById("mode")
+        
+        function darkMode(){
+
+            if(darkRemainingLeft == 1){
+                console.log('jata klik habis')
+                info.textContent="HABISS DONG!!"
+                mode.style.display="none"
+                return;
+            }
+            darkCounter += 1;
+            darkRemainingLeft = darkLimit - darkCounter;
+
+            console.log('klik sisa:', darkRemainingLeft);
+
+            document.getElementById("clicks").innerHTML = darkCounter;
+            
+            info.innerHTML= `sisah klik : ${darkRemainingLeft}`
+           
+
+            body.classList.toggle("dark")
+            
+        }
+    </script>
+</body>
+</html>

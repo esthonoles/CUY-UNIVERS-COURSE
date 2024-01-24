@@ -1,0 +1,11 @@
+TUGAS BESAR:
+1. MEMBUAT PERHITUNGAN MATEMATIKA
+    - luas lingkaran
+    - luas segitiga
+    - luas persegi panjang
+    - luas jajargenjang
+
+2. Menghitung total gaji yang di dapat dalam satu bulan dengan input minimal:
+    - nama karyawan
+    - gaji karyawan
+    - jumlah hari masuk kerja
